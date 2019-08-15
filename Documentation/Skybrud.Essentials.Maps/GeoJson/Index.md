@@ -5,7 +5,7 @@ title: GeoJSON
 
 # GeoJSON
 
-GeoJSON is a popular JSON based format that consists of various features and shapes (referred to as *geometry*).
+GeoJSON is a popular JSON based format that consists of various features and geometries. Below you'll find list for supported features and geometries:
 
 ## Features
 

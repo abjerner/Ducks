@@ -10,12 +10,12 @@ The {{class:Skybrud.Essentials.Strings.StringUtils}} utility class contains meth
 .NET generally has a lot of great methods for parsing strings into other types, but these methods will fail if they see a format that they don't recognize.
 
 ### ParseBoolean
-For instance, there are a number of different ways to represent a boolean value as a string. The {{see:System.Boolean.Parse}}  and {{see:System.Boolean.TryParse}} methods in .NET only knows about `true` and `false`  as boolean values, but not values such as `True` and `False` or `1` and `0`. If the {{see:System.Boolean.Parse}} method is given a value it doesn't know, it will throw an exception.
+For instance, there are a number of different ways to represent a boolean value as a string. The {{see:System.Boolean.Parse}} and {{see:System.Boolean.TryParse}} methods in .NET only knows about `true` and `false`  as boolean values, but not values such as `True` and `False` or `1` and `0`. If the {{see:System.Boolean.Parse}} method is given a value it doesn't know, it will throw an exception.
 
-In Skybrud.Essentials, the {{see:Skybrud.Essentials.Strings.StringUtils.ParseBoolean}} method will look for known variations of `true`, but otherwise return `false` if the value isn't recognized. No exceptions are thrown. Supported string values are `true`, `1`, `t` and `on` (all case-insensitive).
+In Skybrud.Essentials, the <code method="Skybrud.Essentials.Strings.StringUtils.ParseBoolean, Skybrud.Essentials">ParseBoolean</code> method will look for known variations of `true`, but otherwise return `false` if the value isn't recognized. No exceptions are thrown. Supported string values are `true`, `1`, `t` and `on` (all case-insensitive).
 
 ### ParseInt32
-In a similar way to parsing booleans, you can parse a string value into an integer using the {{method:Skybrud.Essentials.Strings.StringUtils.ParseInt32}} method. If the parsing fails, `0` will be returned instead of the method throwing any exceptions. 
+In a similar way to parsing booleans, you can parse a string value into an integer using the <code method="Skybrud.Essentials.Strings.StringUtils.ParseInt32, Skybrud.Essentials">ParseInt32</code> method. If the parsing fails, `0` will be returned instead of the method throwing any exceptions. 
 
 ```csharp
 // Returns "42"
@@ -32,7 +32,7 @@ int value2 = StringUtils.ParseInt32("hello", 123);
 ```
 
 ### ParseInt32Array
-If you have a string with multiple integer values, you can use the {{method:Skybrud.Essentials.Strings.StringUtils.ParseInt32Array}} method for parsing the string value into an actual array of integers:
+If you have a string with multiple integer values, you can use the <code method="Skybrud.Essentials.Strings.StringUtils.ParseInt32Array, Skybrud.Essentials">ParseInt32Array</code> method for parsing the string value into an actual array of integers:
 
 ```csharp
 int[] value = StringUtils.ParseInt32Array("1,2,3,4");

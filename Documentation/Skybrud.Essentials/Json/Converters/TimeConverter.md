@@ -6,20 +6,21 @@ The {{class:Skybrud.Essentials.Json.Converters.Time.TimeConverter}} class lets y
 - {{see:System.DateTimeOffset}}
 - {{see:Skybrud.Essentials.Time.EssentialsDateTime}}
 - {{see:Skybrud.Essentials.Time.EssentialsTime}}
+- {{see:Skybrud.Essentials.Time.EssentialsDate}} *(no time, only date)*
 - {{see:Skybrud.Essentials.Time.EssentialsPartialDate}} *(no time, only date)*
 
 The converter also supports a number of different standardized date and time formats:
 
-- {{see:Skybrud.Essentials.Time.TimeFormat.Iso8601}} *(default)*  
+- <code field="Skybrud.Essentials.Time.TimeFormat.Iso8601, Skybrud.Essentials">TimeFormat.Iso8601</code>  
   Indicates that the format is **ISO 8601**.
-- {{see:Skybrud.Essentials.Time.TimeFormat.Rfc822}}  
+- <code field="Skybrud.Essentials.Time.TimeFormat.Rfc822, Skybrud.Essentials">TimeFormat.Rfc822</code>  
   Indicates that the format is **RFC 822**.
-- {{see:Skybrud.Essentials.Time.TimeFormat.Rfc2822}}  
+- <code field="Skybrud.Essentials.Time.TimeFormat.Rfc2822, Skybrud.Essentials">TimeFormat.Rfc2822</code>  
   Indicates that the format is **RFC 2822**.
-- {{see:Skybrud.Essentials.Time.TimeFormat.UnixTime}}  
+- <code field="Skybrud.Essentials.Time.TimeFormat.UnixTime, Skybrud.Essentials">TimeFormat.UnixTime</code>  
   Indicates that the format is **Unix time**.
 
-You can decorate your properties with the {{type:Newtonsoft.Json.JsonConverterAttribute}} class as shown below. The converter will use {{see:Skybrud.Essentials.Time.TimeFormat.Iso8601}} by default, but you can specify another format as well - eg. {{see:Skybrud.Essentials.Time.TimeFormat.Rfc822}}:
+You can decorate your properties with the <code type="Newtonsoft.Json.JsonConverterAttribute, Newtonsoft.Json">JsonConverterAttribute</code> class as shown below. The converter will use <code field="Skybrud.Essentials.Time.TimeFormat.Iso8601, Skybrud.Essentials">TimeFormat.Iso8601</code> by default, but you can specify another format as well - eg. <code field="Skybrud.Essentials.Time.TimeFormat.Rfc822, Skybrud.Essentials">TimeFormat.Rfc822</code>:
 
 ```c#
 public class Example {
@@ -33,3 +34,18 @@ public class Example {
 }
 ```
 
+## Unix time
+
+To serialize to unix time, you could use <code type="Skybrud.Essentials.Json.Converters.Time.TimeConverter, Skybrud.Essentials">TimeConverter</code> and then specify <code field="Skybrud.Essentials.Time.TimeFormat.UnixTime, Skybrud.Essentials">TimeFormat.UnixTime</code> as the second parameter for the attribute. But to make things a little easier, you could insetad use the <code type="Skybrud.Essentials.Json.Converters.Time.UnixTimeConverter, Skybrud.Essentials">UnixTimeConverter</code> class directly as shown below:
+
+```c#
+public class Example {
+    
+    [JsonConverter(typeof(TimeConverter), TimeFormat.UnixTime)]
+    public DateTime UnixTime1 { get; set; }
+    
+    [JsonConverter(typeof(UnixTimeConverter))]
+    public DateTime UnixTime2 { get; set;}
+    
+}
+```

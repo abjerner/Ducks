@@ -60,12 +60,12 @@ The response body will instead expose the actual status code - eg. as shown here
 
 ```json
 {
-  meta: {
-    code: 307,
-    error: "Page has moved"
+  "meta": {
+    "code": 307,
+    "error": "Page has moved"
   },
-  data: {
-    url: "/my-destination-page/",
+  "data": {
+    "url": "/my-destination-page/",
   }
 }
 ```

@@ -1,3 +1,4 @@
 # Examples
 
-- [Search by ancestor](./searching-by-ancestor.md)
+- [Searching a specific index](./searching-a-specific-index.md)
+- [Searching by ancestor](./searching-by-ancestor.md)

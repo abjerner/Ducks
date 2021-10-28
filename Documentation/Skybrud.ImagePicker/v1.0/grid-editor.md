@@ -1,8 +1,9 @@
 ---
 order: 3
+title: Grid Editor
 ---
 
-# Grid editor
+# Grid Editor
 
 This package also supports adding an image picker as a grid control in the Umbraco grid. Since you most likely want to configure the image picker your self, you have to add your own `package.manifest` with the details about the editor.
 

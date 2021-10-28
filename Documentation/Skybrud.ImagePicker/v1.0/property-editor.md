@@ -2,7 +2,7 @@
 order: 2
 ---
 
-# Property editor
+# Property Editor
 
 The property can be used a either a single image picker or a multiple image picker, but both having the same model (an instance of `ImagePickerList`).
 

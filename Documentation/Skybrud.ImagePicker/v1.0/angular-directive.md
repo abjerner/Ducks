@@ -2,7 +2,7 @@
 order: 4
 ---
 
-# Angular directive
+# Angular Directive
 
 In relation to the backoffice, the main logic of the image picker has been isolated into an Angular directive that can be used in your custom Angular views.
 

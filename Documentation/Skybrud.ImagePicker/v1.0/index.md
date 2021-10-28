@@ -1,3 +1,7 @@
+---
+title: v1.0
+---
+
 # Documentation
 
 Skybrud.ImagePicker is a package for Umbraco 7+ containing a property editor and a grid editor for selecting a number of images for use in a slider, gallery or similar.

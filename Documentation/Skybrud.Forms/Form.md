@@ -4,7 +4,7 @@ order: 1
 
 # Form
 
-<table class="table details lines">
+<table class="table details lined">
     <tr>
         <th>Extends</th>
         <td><em>Nothing</em></td>
@@ -23,7 +23,7 @@ As we're typically using the package in a SPA like context, it's also possible t
 
 The class has the following properties:
 
-<table class="table list border">
+<table class="table list border zebra">
     <thead>
         <tr>
             <th>C#&nbsp;Name</th>

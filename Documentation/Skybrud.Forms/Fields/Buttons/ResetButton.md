@@ -1,6 +1,6 @@
 # ResetButton
 
-<table class="table details lines">
+<table class="table details lined">
     <tr>
         <th>Extends</th>
         <td><code>ButtonBase</code></td>
@@ -21,7 +21,7 @@ The `ResetButton` class represents a HTML reset button similar to writing `<butt
 
 The class has the following properties:
 
-<table class="table list border">
+<table class="table list border zebra">
     <thead>
         <tr>
             <th>C#&nbsp;Name</th>

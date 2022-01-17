@@ -1,6 +1,6 @@
 # Button
 
-<table class="table details lines">
+<table class="table details lined">
     <tr>
         <th>Extends</th>
         <td><code>ButtonBase</code></td>
@@ -21,7 +21,7 @@ The `Button` class represents a normal HTML button similar to writing `<button t
 
 The class has the following properties:
 
-<table class="table list border">
+<table class="table list border zebra">
     <thead>
         <tr>
             <th>C#&nbsp;Name</th>

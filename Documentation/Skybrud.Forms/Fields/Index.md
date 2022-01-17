@@ -28,7 +28,6 @@ order: 2
 - [`EmailField`](./Other/EmailField.md)
 - [`HiddenField`](./Other/HiddenField.md)
 - [`NumberField`](./Other/InputField.md)
-- [`NumberField`](./Other/NumberField.md)
 - [`TelField`](./Other/TelField.md)
 - [`TextArea`](./Other/TextArea.md)
 - [`TextField`](./Other/TextField.md)

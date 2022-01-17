@@ -4,7 +4,7 @@ order: 1
 
 # Form
 
-<table class="table details">
+<table class="table details lines">
     <tr>
         <th>Extends</th>
         <td><em>Nothing</em></td>

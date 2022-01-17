@@ -1,6 +1,6 @@
 # ResetButton
 
-<table class="table details">
+<table class="table details lines">
     <tr>
         <th>Extends</th>
         <td><code>ButtonBase</code></td>

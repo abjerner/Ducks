@@ -1,4 +1,4 @@
 ---
 title: Documentation
-redirect: ./v3/
+redirect: ./v4/
 ---

@@ -1,5 +1,6 @@
 ---
 title: v1.0
+order: 10
 ---
 
 # Skybrud Redirects
